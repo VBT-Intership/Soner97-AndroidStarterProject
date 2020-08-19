@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hoşgeldiniz"
+                android:textColor="@color/siyah"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Lütfen adınızı girin "
+                android:textColor="#7A8089"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:outlineAmbientShadowColor="@color/siyah"
+                android:outlineSpotShadowColor="@color/siyah"
+                android:textColorHint="@color/siyah"
+                app:boxStrokeColor="@color/siyah"
+                tools:ignore="MissingClass">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="İsim"
+                    android:outlineAmbientShadowColor="@color/siyah"
+                    android:outlineSpotShadowColor="@color/siyah"
+                    android:shadowColor="@color/siyah"
+                    android:textColor="@color/siyah"
+                    android:textColorHighlight="@color/siyah"
+                    android:textColorHint="@color/siyah"
+                    android:textColorLink="@color/siyah" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_start"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/soner_button"
+                android:text="Başlayalım"
+                android:textColor="@color/beyaz"
+                >
+
+            </Button>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
